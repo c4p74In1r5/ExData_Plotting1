@@ -8,6 +8,7 @@ png("plot4.png", width=480, height=480, units="px")
 
 par(mfrow = c(2, 2))
 
+# Plot 1 - Top Left
 plot(
     times, 
     data$Global_active_power, 
@@ -17,6 +18,7 @@ plot(
 )
 lines(times, data$Global_active_power)
 
+# Plot 2 - Top Right
 plot(
     times, 
     data$Voltage, 
@@ -26,6 +28,7 @@ plot(
 )
 lines(times, data$Voltage)
 
+# Plot 3 - Bottom Left
 plot(
     times, 
     data$Sub_metering_1,
@@ -44,6 +47,7 @@ legend(
     lwd = 1
 )
 
+# Plot 4 - Bottom Right
 plot(
     times, 
     data$Global_reactive_power, 
